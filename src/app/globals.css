@@ -28,3 +28,9 @@ body {
 .heroSlider .swiper-pagination-bullet-active {
   background: #034e53;
 }
+
+/* category slider navigation  */
+.categorySlider .swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #000 !important;
+}

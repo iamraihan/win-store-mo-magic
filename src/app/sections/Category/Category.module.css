@@ -1,0 +1,34 @@
+.categoryBg {
+  background: linear-gradient(180deg, #f3edc9 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.relative {
+  position: relative;
+}
+.shop {
+  background: rgba(254, 249, 249, 0.95);
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.57);
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 30px;
+}
+.shopTitle {
+  font-size: 25px;
+  line-height: 53px;
+  color: #000000;
+}
+.shopSubtitle {
+  font-size: 21px;
+  line-height: 53px;
+  color: #14b1f0;
+}
+.categoryContainer {
+  max-width: 1262px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
