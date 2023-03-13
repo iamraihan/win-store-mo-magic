@@ -13,3 +13,18 @@ img {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/* pagination css  */
+.heroSlider .swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+  height: 10px !important;
+  width: 36px !important;
+  border-radius: none !important;
+  background: #aa9393;
+}
+.heroSlider .swiper-pagination-bullet {
+  border-radius: 10px !important;
+}
+.heroSlider .swiper-pagination-bullet-active {
+  background: #034e53;
+}
