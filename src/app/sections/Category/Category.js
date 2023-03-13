@@ -4,6 +4,7 @@ import styles from "./Category.module.css";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import CategorySliderBtn from "@/app/components/CategorySliderBtn/CategorySliderBtn";
 
 const Category = () => {
   const dataList = [
@@ -53,22 +54,32 @@ const Category = () => {
       <div className={`${styles.categoryContainer}`}>
         <>
           <Swiper
-            slidesPerView={4}
+            style={{ paddingLeft: "30px", paddingRight: "30px" }}
+            slidesPerView={1.2}
             spaceBetween={33}
             effect={"fade"}
-            navigation={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+              },
+
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 33,
+              },
+            }}
             modules={[Navigation]}
             className="categorySlider"
           >
             {dataList?.map((data) => (
               <SwiperSlide key={data.id}>
                 <div className={`${styles.relative}`}>
-                  <Image
-                    src={`${data?.imgURL}`}
-                    width={272}
-                    height={199}
-                    alt={data?.title}
-                  />
+                  <img src={data?.imgURL} alt={data?.title} />
                   <div className={`${styles.shop}`}>
                     <h4>{data?.title}</h4>
                     <p className={`${styles.shopSubtitle}`}>Shop</p>
@@ -76,6 +87,7 @@ const Category = () => {
                 </div>
               </SwiperSlide>
             ))}
+            <CategorySliderBtn />
           </Swiper>
         </>
       </div>

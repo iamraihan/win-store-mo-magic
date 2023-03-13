@@ -1,0 +1,34 @@
+.swiperBtns button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.categorySwiperPrevBtn,
+.categorySwiperNextBtn {
+  position: absolute;
+  z-index: 10;
+}
+
+.categorySwiperPrevBtn {
+  top: 43%;
+  right: 0;
+}
+.categorySwiperNextBtn {
+  z-index: 10;
+  top: 43%;
+  left: 0;
+}
+
+/* Media Queries */
+/* @media (max-width: 640px) {
+  .category-swiper-prev-btn {
+    bottom: -206px;
+    right: 16px;
+  }
+  .category-swiper-next-btn {
+    bottom: -206px;
+    left: 216px;
+  }
+} */
