@@ -79,7 +79,13 @@ const Category = () => {
             {dataList?.map((data) => (
               <SwiperSlide key={data.id}>
                 <div className={`${styles.relative}`}>
-                  <img src={data?.imgURL} alt={data?.title} />
+                  <Image
+                    src={`${data?.imgURL}`}
+                    width={272}
+                    height={199}
+                    style={{ height: "100%", width: "100%" }}
+                    alt={data?.title}
+                  />
                   <div className={`${styles.shop}`}>
                     <h4>{data?.title}</h4>
                     <p className={`${styles.shopSubtitle}`}>Shop</p>
