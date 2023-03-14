@@ -1,8 +1,8 @@
 "use client";
 import styles from "./RecentProducts.module.css";
-import getQueryClient from "@/app/utils/getQueryClient";
 import { useQuery } from "react-query";
 import ProductCard from "@/app/components/ProductCard/ProductCard";
+import { useEffect, useState } from "react";
 
 export const getProducts = async () => {
   const res = await fetch("https://fakestoreapi.com/products");
@@ -10,6 +10,20 @@ export const getProducts = async () => {
   return data;
 };
 const RecentProducts = () => {
+  const [width, setWidth] = useState(1140);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      const screenWidth = window.outerWidth;
+      setWidth(screenWidth);
+    });
+  }, []);
+  console.log(width);
+  let cardWrapper;
+  if (width >= 1140) {
+    cardWrapper = styles.itemWrapper;
+  } else {
+    cardWrapper = styles.productsWrapper;
+  }
   const { data, isLoading, error } = useQuery("products", getProducts);
   if (isLoading) return "Loading...";
 
@@ -20,7 +34,7 @@ const RecentProducts = () => {
       <h2 className={`${styles.productTitle}`}>
         <span>New</span> Arrivals
       </h2>
-      <div className={`${styles.productsWrapper}`}>
+      <div className={`${cardWrapper}`}>
         {data.slice(0, 10).map((product) => (
           <ProductCard product={product} key={product.id} />
         ))}

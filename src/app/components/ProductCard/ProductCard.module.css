@@ -3,6 +3,12 @@
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.13);
 }
+.item {
+  flex-basis: calc(15.666% - 20px);
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
 .productCategory {
   font-size: 12px;
   line-height: 14px;
@@ -39,8 +45,9 @@
   line-height: 18px;
   color: #ffffff;
   background: #15adb7;
-  /* width: 100%; */
+  width: 100%;
   padding: 8.5px 40px;
   border: 0;
   outline: none;
+  cursor: pointer;
 }
