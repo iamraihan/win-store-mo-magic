@@ -1,0 +1,21 @@
+.productsContainer {
+  max-width: 1272px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 46px;
+}
+
+.productTitle {
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.productTitle span {
+  color: #00cad7;
+}
+.productsWrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 31px;
+}

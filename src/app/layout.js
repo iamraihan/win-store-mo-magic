@@ -1,6 +1,6 @@
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
+// "use client";
 import "./globals.css";
+import Providers from "./utils/providers";
 
 export const metadata = {
   title: "Win Store",
@@ -11,13 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
-          <Navbar />
-        </header>
-        <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
