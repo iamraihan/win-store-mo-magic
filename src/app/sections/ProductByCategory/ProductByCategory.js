@@ -1,7 +1,6 @@
 "use client";
 
 import ProductByCategoryCard from "@/app/components/ProductByCategoryCard/ProductByCategoryCard";
-import RootLayout from "@/app/layout";
 import { useQuery } from "react-query";
 import styles from "./ProductByCategory.module.css";
 
@@ -44,10 +43,6 @@ const ProductByCategory = () => {
           <p>Consoles</p>
         </div>
         <h2>Product By category</h2>
-        {/* <Kitchen /> */}
-        {/* <RootLayout>
-          <h2>Hello</h2>
-        </RootLayout> */}
       </div>
       <div className={styles.productCategoryWrapper}>
         {newData.map((data) => (
