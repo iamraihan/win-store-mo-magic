@@ -192,7 +192,7 @@
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .categoryProductCard:nth-child(2) .save {
     left: 200px;
   }
