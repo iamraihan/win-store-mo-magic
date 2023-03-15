@@ -17,7 +17,6 @@ const RecentProducts = () => {
       setWidth(screenWidth);
     });
   }, []);
-  console.log(width);
   let cardWrapper;
   if (width >= 1140) {
     cardWrapper = styles.itemWrapper;

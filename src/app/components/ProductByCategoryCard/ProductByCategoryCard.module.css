@@ -1,0 +1,218 @@
+.categoryProductCard img {
+  width: 192px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.categoryProductCard {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  padding: 23px;
+  position: relative;
+}
+.categoryProductCard:nth-child(2) {
+  grid-row: span 2;
+}
+.categoryProductCard:nth-child(2) img {
+  width: 371px;
+  height: 459px;
+}
+
+.contentWrapper {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 36px;
+}
+.imgWrapper {
+  display: flex;
+  justify-content: end;
+  gap: 36px;
+}
+.categoryCardTitle {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.categoryCardDiscountPrice {
+  font-size: 27px;
+  line-height: 30px;
+  color: #14b1f0;
+}
+.categoryCardRegularPrice {
+  font-size: 17px;
+  line-height: 30px;
+  text-decoration-line: line-through;
+  color: #000000;
+}
+.save {
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  padding: 17px 40px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1a1414;
+  position: absolute;
+  top: 200px;
+  left: 23px;
+}
+
+.specialOffer {
+  font-size: 36px;
+  line-height: 42px;
+  color: #151a1b;
+}
+.specialOffer span {
+  color: #0aaeb9;
+  display: block;
+}
+
+.availableItemOne {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.availableItemOne p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #0aaeb9;
+}
+.availableItemTwo p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #0aaeb9;
+}
+.availableItemThree {
+  display: flex;
+  gap: 36px;
+  margin-top: 10px;
+}
+.availableItemThree p {
+  font-size: 19px;
+  line-height: 32px;
+  color: #c82020;
+}
+
+/* design using nth  */
+.categoryProductCard:nth-child(2) .contentWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.categoryProductCard:nth-child(2) .specialOffer span {
+  color: #c82020;
+}
+.categoryProductCard:nth-child(4) .specialOffer span {
+  color: #c82020;
+}
+.categoryProductCard:nth-child(5) .specialOffer span {
+  color: #c82020;
+}
+.categoryProductCard:nth-child(2) .save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 141px;
+  height: 143px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  border-radius: 83px;
+  color: #ffffff;
+  position: absolute;
+  top: 200px;
+  left: 250px;
+}
+.categoryProductCard:nth-child(3) .save {
+  background: linear-gradient(90deg, #cc95c0 0%, #dbd4b4 50%, #7aa1d2 100%);
+  padding: 17px 40px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1a1414;
+  position: absolute;
+  top: 200px;
+  left: 23px;
+}
+.categoryProductCard:nth-child(4) .contentWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.categoryProductCard:nth-child(4) .save {
+  background: linear-gradient(90deg, #ee9ca7 0%, #ffdde1 100%);
+  border-radius: 83px;
+  width: 90px;
+  height: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1a1414;
+  position: absolute;
+  top: 22px;
+  left: 300px;
+}
+.categoryProductCard:nth-child(4) .categoryCardDiscountPrice {
+  color: #d22727;
+}
+.categoryProductCard:nth-child(5) .contentWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.categoryProductCard:nth-child(5) .save {
+  background: linear-gradient(90deg, #f09819 0%, #edde5d 100%);
+  border-radius: 83px;
+  width: 141px;
+  height: 143px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1a1414;
+  position: absolute;
+  top: 165px;
+  left: 220px;
+}
+.categoryProductCard:nth-child(5) .imgWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Query for Mobile Devices  */
+@media (max-width: 480px) {
+  .categoryProductCard:nth-child(2) .save {
+    left: 200px;
+  }
+  .categoryProductCard:nth-child(4) .save {
+    left: 265px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .categoryProductCard:nth-child(2) .save {
+    left: 200px;
+  }
+  .categoryProductCard:nth-child(4) .save {
+    left: 250px;
+  }
+  .categoryProductCard:nth-child(5) .save {
+    left: 200px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .categoryProductCard:nth-child(2) .save {
+    left: 168px;
+  }
+  .categoryProductCard:nth-child(4) .save {
+    left: 217px;
+  }
+  .categoryProductCard:nth-child(5) .save {
+    left: 180px;
+  }
+}
