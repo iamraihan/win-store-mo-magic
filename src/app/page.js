@@ -8,12 +8,10 @@ import RecentProducts from "./sections/RecentProducts/RecentProducts";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Category />
       <RecentProducts />
       <ProductByCategory />
-      <Footer />
     </div>
   );
 }
