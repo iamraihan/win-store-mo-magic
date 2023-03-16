@@ -3,7 +3,7 @@ import ProductByCategoryCard from "@/app/components/ProductByCategoryCard/Produc
 import Loading from "@/app/Loading";
 import { useQuery } from "react-query";
 import styles from "./ProductByCategory.module.css";
-
+import { Tab } from "@headlessui/react";
 const getCategory = async () => {
   const res = await fetch(
     "https://fakestoreapi.com/products/category/jewelery"
@@ -35,15 +35,18 @@ const ProductByCategory = () => {
   return (
     <div className={styles.categoryProductContainer}>
       <div className={styles.sectionTabWrapper}>
-        <div>
-          <p>Best Deals</p>
+        <p className={styles.productCategoryTitle}>
+          <span>Best</span> Deals
+        </p>
+        <div className={styles.tabItemWrap}>
+          <p className={styles.tabItem}>Kitchen Appliances</p>
+          <p className={styles.tabItem}>Consoles</p>
+          <p className={styles.tabItem}>TV & Videos</p>
+          <p className={styles.tabItem}>Cell Phones</p>
+          <p className={styles.tabItem}>Grocery</p>
         </div>
-        <div>
-          <p>Kitchen Appliances</p>
-          <p>Consoles</p>
-        </div>
-        <h2>Product By category</h2>
       </div>
+
       <div className={styles.productCategoryWrapper}>
         {newData.map((data) => (
           <ProductByCategoryCard data={data} key={data.id} />
