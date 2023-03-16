@@ -1,5 +1,4 @@
 "use client";
-import useSWR from "swr";
 import ProductByCategoryCard from "@/app/components/ProductByCategoryCard/ProductByCategoryCard";
 import { useQuery } from "react-query";
 import styles from "./ProductByCategory.module.css";
