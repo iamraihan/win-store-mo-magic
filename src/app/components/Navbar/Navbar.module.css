@@ -2,6 +2,7 @@
 }
 .topNav {
   background: #03484d;
+  padding: 12px 0;
 }
 .topNavWrapper {
   display: flex;
@@ -18,11 +19,117 @@
   display: flex;
   align-items: center;
 }
+.inputSelect {
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #aba3a3;
+  padding-top: 10.5px;
+  padding-bottom: 13.5px;
+  padding-left: 17.5px;
+  background: #ffffff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.inputText {
+  font-size: 13px;
+  line-height: 15px;
+  color: #aba3a3;
+  padding-top: 10.5px;
+  padding-bottom: 13.5px;
+  padding-left: 17.5px;
+
+  background: #ffffff;
+}
+.inputText input {
+  border: none;
+}
+.submitBtn {
+  background: #b6b6b6;
+  border-radius: 0px 6px 6px 0px;
+  padding: 7px 9.5px;
+}
 
 .cartAreaWrapper {
   display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.callNow {
+  font-size: 9px;
+  line-height: 11px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+.phone {
+  font-size: 13px;
+  line-height: 15px;
+  text-align: right;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.signIn {
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #ffffff;
 }
 .cartItem {
   display: flex;
+  align-items: center;
+}
+.cartText {
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+/* bottom nav  */
+.bottomNav {
+  background: #0e3b3e;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.39);
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
+}
+.bottomNavWrapper {
+  max-width: 1252px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.routesList {
+  display: flex;
+  gap: 36px;
+}
+
+.categoryWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.categoryWrapper p {
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.route {
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.socialIcons {
+  display: flex;
+  gap: 24px;
   align-items: center;
 }
