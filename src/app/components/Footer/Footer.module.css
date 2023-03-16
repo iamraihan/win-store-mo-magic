@@ -42,6 +42,7 @@
   display: flex;
   gap: 24px;
   align-items: center;
+  margin-top: 14px;
 }
 .linkCategory {
   font-size: 20px;
