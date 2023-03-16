@@ -38,8 +38,8 @@ const Navbar = () => {
                     placeholder="Search for products"
                   />
                 </div>
-                <div>
-                  <img className={styles.submitBtn} src="/search.png" alt="" />
+                <div className={styles.submitBtn}>
+                  <img src="/search.png" alt="" />
                 </div>
               </div>
             </div>
