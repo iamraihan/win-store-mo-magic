@@ -1,14 +1,27 @@
+"use client";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 const Navbar = () => {
+  const navHandler = () => {
+    const toggleMenu = document.getElementById("bottom-nav");
+    if (toggleMenu.style.display === "block") {
+      toggleMenu.style.display = "none";
+    } else {
+      toggleMenu.style.display = "block";
+    }
+  };
+
   return (
     <div>
       <div className={styles.navbar}>
+        <div className={styles.hamburgerIcon}>
+          <img onClick={() => navHandler()} src="/hamburger.svg" alt="" />
+        </div>
         <div className={styles.topNav}>
           <div className={styles.topNavWrapper}>
             <div className={styles.logoSearchWrapper}>
               <div>
-                <img src="/logo.png" alt="" />
+                <img className={styles.logo} src="/logo.png" alt="" />
               </div>
               <div className={styles.inputWrapper}>
                 <div>
@@ -31,7 +44,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className={styles.cartAreaWrapper}>
-              <div>
+              <div className={styles.numWrapper}>
                 <p className={styles.callNow}>Call Us Now</p>
                 <p className={styles.phone}>
                   {" "}
@@ -53,7 +66,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className={styles.bottomNav}>
+        <div id="bottom-nav" className={styles.bottomNav}>
           <div className={styles.bottomNavWrapper}>
             <div className={styles.routesList}>
               <div className={styles.categoryWrapper}>
