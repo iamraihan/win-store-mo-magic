@@ -3,7 +3,6 @@ import ProductByCategoryCard from "@/app/components/ProductByCategoryCard/Produc
 import Loading from "@/app/Loading";
 import { useQuery } from "react-query";
 import styles from "./ProductByCategory.module.css";
-import { Tab } from "@headlessui/react";
 const getCategory = async () => {
   const res = await fetch(
     "https://fakestoreapi.com/products/category/jewelery"
