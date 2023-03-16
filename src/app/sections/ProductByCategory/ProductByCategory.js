@@ -1,5 +1,6 @@
 "use client";
 import ProductByCategoryCard from "@/app/components/ProductByCategoryCard/ProductByCategoryCard";
+import Loading from "@/app/Loading";
 import { useQuery } from "react-query";
 import styles from "./ProductByCategory.module.css";
 
@@ -13,7 +14,7 @@ const getCategory = async () => {
 
 const ProductByCategory = () => {
   const { data, isLoading, error } = useQuery("category", getCategory);
-  if (isLoading) return "Loading...";
+  if (isLoading) return <Loading />;
 
   if (error) return "An error has occurred: " + error.message;
 

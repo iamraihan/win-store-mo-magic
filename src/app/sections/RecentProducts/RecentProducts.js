@@ -3,6 +3,7 @@ import styles from "./RecentProducts.module.css";
 import { useQuery } from "react-query";
 import ProductCard from "@/app/components/ProductCard/ProductCard";
 import { useEffect, useState } from "react";
+import Loading from "@/app/Loading";
 
 export const getProducts = async () => {
   const res = await fetch("https://fakestoreapi.com/products");
@@ -24,7 +25,7 @@ const RecentProducts = () => {
     cardWrapper = styles.productsWrapper;
   }
   const { data, isLoading, error } = useQuery("products", getProducts);
-  if (isLoading) return "Loading...";
+  if (isLoading) return <Loading />;
 
   if (error) return "An error has occurred: " + error.message;
   //   console.log(data);

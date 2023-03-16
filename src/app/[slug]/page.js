@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Loading from "../Loading";
 import styles from "./page.module.css";
 
 const ProductDetails = (params) => {
@@ -12,7 +13,9 @@ const ProductDetails = (params) => {
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
-  console.log(product);
+  if (!product) {
+    return <Loading />;
+  }
   return (
     <div className={styles.singleProductsContainer}>
       <div className={styles.wrapper}>
