@@ -1,6 +1,5 @@
 import styles from "./ProductByCategoryCard.module.css";
 const ProductByCategoryCard = ({ data }) => {
-  console.log(data);
   return (
     <div className={styles.categoryProductCard}>
       <div className={styles.contentWrapper}>
