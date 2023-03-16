@@ -11,6 +11,7 @@
   padding: 52px 0;
   display: flex;
   justify-content: space-between;
+  padding-top: 160px;
 }
 .sliderContents {
   max-width: 490px;

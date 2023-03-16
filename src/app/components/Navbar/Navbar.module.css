@@ -1,35 +1,28 @@
-.Nav {
+.navbar {
+}
+.topNav {
+  background: #03484d;
+}
+.topNavWrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
+  max-width: 1216px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.Logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
+.logoSearchWrapper {
+  display: flex;
+  gap: 41px;
 }
-.Links {
+.inputWrapper {
   display: flex;
   align-items: center;
 }
-.Cart {
+
+.cartAreaWrapper {
   display: flex;
-  align-items: center;
-  margin-left: 1rem;
-  cursor: pointer;
 }
-.ItemCount {
-  background-color: #fff;
-  color: #333;
-  border-radius: 50%;
-  width: 1.5rem;
-  height: 1.5rem;
+.cartItem {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
 }
